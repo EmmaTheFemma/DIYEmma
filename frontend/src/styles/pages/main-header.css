@@ -1,0 +1,10 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em var(--site-padding);
+}
+
+.logo-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}

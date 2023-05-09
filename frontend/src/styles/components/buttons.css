@@ -1,0 +1,17 @@
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: .3em 1em;
+    border: none;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+    cursor: pointer;
+}

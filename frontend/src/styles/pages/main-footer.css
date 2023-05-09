@@ -1,0 +1,9 @@
+.main-footer {
+    position: sticky;
+    top: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em var(--site-padding);
+}

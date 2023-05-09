@@ -1,0 +1,43 @@
+.main_nav nav ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+
+    position: fixed;
+    right: -100%;
+    flex-direction: column;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* justify-content: space-between; */
+}
+
+
+
+
+
+.main_nav.active nav ul {
+    left: 0;
+    /* right: auto; */
+    padding: 1em;
+/*     justify-content: center;
+    align-items: center; */
+    background-color: white;
+}
+
+
+@media screen and (min-width: 780px) {
+    .main_nav nav ul {
+        left: 0;
+        position: static;
+        flex-direction: row;
+        font-size: 1rem;
+    }
+
+    .nav-active {
+        border-bottom: 1px solid var(--primary-color); /* Replace with your desired color */
+        padding-bottom: 0;
+    }
+    
+}

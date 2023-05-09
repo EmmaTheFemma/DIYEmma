@@ -1,0 +1,27 @@
+.main-hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--site-padding);
+}
+
+.main-hero h1 {
+    font-size: 3rem;
+    margin-bottom: .3em;
+}
+
+.main-hero img {
+    max-width: 17em;
+    display: none;
+}
+
+.main-hero button {
+    margin-top: 2em;
+}
+
+
+
+@media screen and (min-width: 780px) {
+    .main-hero img {
+        display: block;
+    }
+}
