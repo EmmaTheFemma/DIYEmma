@@ -8,7 +8,7 @@ const links = [
 /*     { name: "Crochet", url: "#" },
     { name: "Sewing", url: "#" },
     { name: "Gaming", url: "#" }, */
-    { name: "Blog", url: "/blog" },
+    { name: "Blog", url: "/blogs" },
   ];
 
 

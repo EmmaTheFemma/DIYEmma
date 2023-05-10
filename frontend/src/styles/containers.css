@@ -1,4 +1,11 @@
 .main-container {
     max-width: var(--container-size-main);
     margin: 0 auto;
+    padding: 0 var(--site-padding);
+}
+
+.article-container {
+    max-width: var(--container-size-article);
+    margin: 0 auto;
+    padding: 0 var(--site-padding);
 }
