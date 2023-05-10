@@ -1,13 +1,16 @@
 import '../../styles/globals.css';
 import '../../styles/containers.css';
 import '../../styles/layouts.css';
-import { Inter } from 'next/font/google'
 import Head from "next/head";
 import TheHeader from './header';
 import MainFooter from './footer';
+import {Josefin_Sans} from '@next/font/google';
 
 
-const inter = Inter({ subsets: ['latin'] })
+const josefin = Josefin_Sans({
+  weight:['400'],
+  preload: false //Want to try and make it true.
+});
 
 
 const links = [
@@ -23,14 +26,15 @@ export default function RootLayout({
   return (
     <html lang="en">
        <Head>
-        <link rel="shortcut icon" href="/heart-icon.ico" />
+        <link rel="icon" href="./heart-icon.ico" />
       </Head>
-      <body className={inter.className}>
-      <TheHeader />
+      <body className={josefin.className}>
+        <TheHeader />
 
-      <main>{children}</main>
-      <MainFooter />
-        </body>
+        <main>{children}</main>
+
+        <MainFooter />
+      </body>
     </html>
   )
 }
