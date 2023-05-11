@@ -1,0 +1,16 @@
+.main-article {
+    margin-top: 3em;
+}
+
+.article-description {
+    margin-top: .5em;
+}
+
+.main-article h1 {
+    margin-bottom: .5em;
+    font-size: 3rem;
+}
+
+.main-article-content {
+    margin-top: 1em;
+}

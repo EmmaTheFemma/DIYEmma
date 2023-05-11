@@ -9,3 +9,9 @@
     margin: 0 auto;
     padding: 0 var(--site-padding);
 }
+
+.small-container {
+    max-width: var(--container-size-small);
+    margin: 0 auto;
+    padding: 0 var(--site-padding);
+}

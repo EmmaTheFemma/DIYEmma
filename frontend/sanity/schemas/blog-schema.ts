@@ -34,28 +34,6 @@ const blog = {
       type: 'datetime',
     },
     {
-      name: "datePublished",
-      title: "Date Published",
-      type: "datetime",
-      readOnly: true,
-      options: {
-        inputResult: "readOnly",
-      },
-    },
-    {
-      name: "dateModified",
-      title: "Date Modified",
-      type: "datetime",
-      readOnly: true,
-      options: {
-        inputResult: "readOnly",
-      },
-      initialValue: () => ({
-        _type: "datetime",
-        datetime: new Date().toISOString(),
-      }),
-    },
-    {
       name: "image",
       title: "Image",
       type: "image",
@@ -73,7 +51,13 @@ const blog = {
       title: "Content",
       type: "array",
       of: [
-        { type: "block" },
+        { type: "block",
+          marks: {
+/*             options: {
+              heading1: ""
+            }, */
+          },
+      },
         {
           type: "image",
           fields: [

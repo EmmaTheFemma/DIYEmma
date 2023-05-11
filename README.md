@@ -17,7 +17,11 @@ Get doubled the free from [Sanity Youtube](http://sanity.io/youtube)
 `npm install sanity next-sanity`
 
 
-`` `` `` `` ``
+`npm install --save @portabletext/react` 
+
+`npm i next-sitemap` 
+
+`` `` ``
 
 
 ## More...

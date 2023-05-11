@@ -2,6 +2,7 @@
 /* import LatestArticle from "../cta/latest-article"; */
 import "@/styles/components/heros/main-hero.css";
 import "@/styles/components/buttons.css";
+import LatestArticle from "../buttons/latest-article";
 
 
 const MainHero = () => {
@@ -12,8 +13,8 @@ const MainHero = () => {
             <div>
                 <h1>Emma&apos;s Cozy Corner <span className="color-red">&hearts;</span></h1>
                 <p className="mt-1 fz-3">Get Comfy and Creative with Emma&apos;s DIY Projects and Ideas</p>
-                {/* <LatestArticle /> */}
-                <button>Read More...</button>
+
+                <LatestArticle />
             </div>
 
             <picture>
