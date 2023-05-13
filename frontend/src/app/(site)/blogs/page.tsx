@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { getBlogs } from '../../../../sanity/sanity-utils';
 import Link from 'next/link';
 import '../../../styles/components/cards/blog-preview.css';
+import moment from "moment";
 
 
 export const metadata = {
@@ -37,6 +38,7 @@ export default async function BlogPage() {
                 )}
                 <h2>{blog.name}</h2>
                 <p>{blog.description}</p>
+                <p>{moment(blog._createAt).format("MMMM DD, YYYY")}</p>
             </Link>
         ))}
         </div>
