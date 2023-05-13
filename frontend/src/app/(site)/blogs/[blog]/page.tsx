@@ -10,12 +10,12 @@ type Props = {
 }
 
 // Makes it SSG. Need to fix ity to Static instead.
-export const generateStaticParams = async () => {
+/* export const generateStaticParams = async () => {
   const blogs = await getBlogs();
   return blogs.map((blog) => ({
     slug: blog.slug,
   }));
-};
+}; */
 
 
 export async function generateMetadata({ params }: Props) {

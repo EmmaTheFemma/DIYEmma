@@ -25,9 +25,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-       <Head>
-        <link rel="icon" href="./heart-icon.ico" />
-      </Head>
       <body className={josefin.className}>
         <TheHeader />
 
