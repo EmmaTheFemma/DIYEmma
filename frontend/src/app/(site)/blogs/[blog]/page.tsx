@@ -35,12 +35,8 @@ export async function getStaticProps({ params }: Props) {
 // TODO: VERY IMPORETANT NEED TO FIX AND MAKE IT WORK!! For making pages static.
 export async function generateStaticParams() {
   const blogs = await getBlogs();
-  const slugs = blogs.map((blog) =>  blog.slug )
   const slugRoutes = blogs.map((slug) => slug.slug );
-
-  /* `/blogs/${blog.slug}` */
-  console.log("SLUGS")
-  console.log(slugs) //Works
+  
 
   return slugRoutes.map( slug => ({
     blog: slug, // blog as in [blog]
