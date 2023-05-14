@@ -2,6 +2,24 @@
 DIYEmma
 
 
+https://www.youtube.com/watch?v=x3fCEPFgUSM&t=2542s 
+2:25
+
+## TODO
+
+**Website**
+1. MAKE THE SITE STATIC!! Error when reloading a website in slug.
+1. Make the blog content being converted for Nextjs. Like images into the Image component.
+1. Make a Link component that makes all foreign links having target="_blank"
+1. PortableText component. Toi make all the content better styled for html like the Link target.
+
+**Sanity**
+1. Enable Preview, so we can preview blog posts before publishing.
+1. Add authors, maybe make it specific to gmail? Or default to it.
+
+
+getStaticProps or getServerSideProps maybe.
+
 ## Getting Started
 
 If the you just downloaded this then **ONLY** run this:
