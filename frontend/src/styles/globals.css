@@ -132,6 +132,11 @@ a:hover img {
   margin-top: 5em;
 }
 
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

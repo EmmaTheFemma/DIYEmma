@@ -2,14 +2,14 @@
 import { NextStudio } from 'next-sanity/studio';
 import config from '../../../../../sanity.config';
 
-// TODO: Makes it static!!
+// TODO: Makes it static!! Or whatever so it can be loaded. Get 500 Internal Server Error
 /* export async function generateStaticParams() {
   
-    return ({
-      index: "/admin", // index as in [...index]
-    });
-  
-  } */
+  return ({
+    "/admin": "/admin", // index as in [...index]
+  });
+
+} */
 
 
 export default function AdminPage() {

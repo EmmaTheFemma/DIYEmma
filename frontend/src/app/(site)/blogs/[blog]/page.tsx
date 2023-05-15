@@ -41,7 +41,6 @@ export default async function SingleBlog({ params }: Props) {
   return (
     <article className='small-container main-article'>
       <h1>{ blog.name }</h1>
-      <p>{ slug }</p>
 
       {blog.image && <Image src={blog.image.url} alt={blog.image.alt} width={685} height={400} style={{objectFit: "cover"}} />}
 
