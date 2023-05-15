@@ -3,6 +3,7 @@ import { PortableText } from '@portabletext/react';
 import { getBlog, getBlogs } from '../../../../../sanity/sanity-utils';
 import '../../../../styles/pages/main-article.css';
 import config from '../../../../../sanity/config/client-config';
+import { RichTextComponents } from '@/components/RichTextComponents';
 
 
 type Props = {
@@ -42,12 +43,14 @@ export default async function SingleBlog({ params }: Props) {
     <article className='small-container main-article'>
       <h1>{ blog.name }</h1>
 
-      {blog.image && <Image src={blog.image.url} alt={blog.image.alt} width={685} height={400} style={{objectFit: "cover"}} />}
+      {blog.image && <Image src={blog.image.url} alt={blog.image.alt} width={685} height={400} style={{objectFit: "cover"}} priority={true} quality={60} />}
+
+      <p>Image URL: { blog.image.url }</p>
 
       <p className="article-description">{ blog.description }</p>
 
       <div className='main-article-content'>
-        <PortableText value={ blog.content } />
+        <PortableText value={ blog.content } components={ RichTextComponents } />
       </div>
     </article>
   )
