@@ -9,30 +9,9 @@ type Props = {
   params: { blog: string }
 }
 
-/* export const generateStaticParams = async () => {
-  const blogs = await getBlogs();
-  return {
-    paths: blogs.map((blog) => ({
-      params: { blog: blog.slug }
-    })),
-    fallback: false // or true if you want to enable fallback rendering
-  };
-};
+export const revalidate = 60; //Revalidates webpage ever X sec.
 
-export async function getStaticPaths() {
-  return { paths: await generateStaticParams(), fallback: false };
-}
-
-export async function getStaticProps({ params }: Props) {
-  const blog = await getBlogBySlug(params.blog);
-  return {
-    props: {
-      blog,
-    },
-  };
-} */
-
-// TODO: VERY IMPORETANT NEED TO FIX AND MAKE IT WORK!! For making pages static.
+// Makes it static!!
 export async function generateStaticParams() {
   const blogs = await getBlogs();
   const slugRoutes = blogs.map((slug) => slug.slug );
