@@ -2,6 +2,16 @@
     margin-top: 3em;
 }
 
+.main-article-banner-container {
+    position: relative;
+    width: 100%;
+    height: 25em;
+}
+
+.main-article-banner-container img {
+    object-fit: cover;
+  }
+
 .article-description {
     margin-top: .5em;
 }
@@ -13,4 +23,15 @@
 
 .main-article-content {
     margin-top: 1em;
+}
+
+
+.main-article-image-container {
+    position: relative;
+    max-width: 100%;
+    height: 25em;
+}
+
+.main-article-image-container img{
+    object-fit: contain;
 }

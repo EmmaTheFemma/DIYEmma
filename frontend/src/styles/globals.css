@@ -137,6 +137,16 @@ a:hover img {
   color: white;
 }
 
+.relative {
+  position: relative;
+  width: 100%;
+  height: 20em;
+}
+
+.relative img {
+  object-fit: cover;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

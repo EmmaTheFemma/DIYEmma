@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import { getBlog, getBlogs } from '../../../../../sanity/sanity-utils';
 import '../../../../styles/pages/main-article.css';
-import config from '../../../../../sanity/config/client-config';
 import { RichTextComponents } from '@/components/RichTextComponents';
+import moment from "moment";
 
 
 type Props = {
@@ -24,6 +24,7 @@ export async function generateStaticParams() {
 
 }
 
+
 export async function generateMetadata({ params }: Props) {
   const slug = params.blog;
   const blog = await getBlog(slug);
@@ -43,9 +44,12 @@ export default async function SingleBlog({ params }: Props) {
     <article className='small-container main-article'>
       <h1>{ blog.name }</h1>
 
-      {blog.image && <Image src={blog.image.url} alt={blog.image.alt} width={685} height={400} style={{objectFit: "cover"}} priority={true} quality={60} />}
+      <p>{ moment(blog._createAt).format("MMMM DD, YYYY") } / Not working...</p>
+      <p>{ new Date(blog._createAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric"}) } / Please work...</p>
 
-      <p>Image URL: { blog.image.url }</p>
+      <div className="main-article-banner-container">
+        {blog.image && <Image src={blog.image.url} alt={blog.image.alt} priority quality={60} fill/>}
+      </div>
 
       <p className="article-description">{ blog.description }</p>
 

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://diyemma.netlify.app
+Host: https://diy-emma.vercel.app
 
 # Sitemaps
-Sitemap: https://diyemma.netlify.app/sitemap.xml
+Sitemap: https://diy-emma.vercel.app/sitemap.xml

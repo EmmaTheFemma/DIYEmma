@@ -34,6 +34,15 @@ const blog = {
       type: 'datetime',
     },
     {
+      name: 'lastUpdate',
+      title: 'Date updated',
+      type: 'date',
+      options: {
+        dateFormat: 'YYYY-MM-DD',
+        calendarTodayLabel: 'Today'
+      }
+    },
+    {
       name: "image",
       title: "Image",
       type: "image",

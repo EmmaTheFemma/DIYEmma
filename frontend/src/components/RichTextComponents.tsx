@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import urlFor from "../../sanity/urlFor";
+/* import "../styles/pages/main-article.css" */
 
 export const RichTextComponents = {
     types: {
         image: ({ value }: any) => {
-            return (<Image src={ urlFor(value.asset._ref).url() } alt={value.alt} width={700} height={400} quality={60} />);
+            return (<div className="main-article-image-container"><Image src={ urlFor(value.asset._ref).url() } alt={value.alt} quality={60} fill/></div>);
         }
     },
 

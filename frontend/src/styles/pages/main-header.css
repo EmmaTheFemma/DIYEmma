@@ -1,7 +1,8 @@
 .main-header {
     display: flex;
     justify-content: space-between;
-    padding: 2em var(--site-padding);
+    /* padding: 2em var(--site-padding); */
+    margin-top: 2em;
 }
 
 .logo-title {
