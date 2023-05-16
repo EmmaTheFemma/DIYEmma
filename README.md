@@ -1,15 +1,18 @@
 # DIYEmma
 DIYEmma
 
+[Website URL](https://diyemma.netlify.app/)
+
 
 https://www.youtube.com/watch?v=x3fCEPFgUSM&t=2542s 
 2:25
 
 ## TODO
 
+**PRIORITY**
+1. Make /admin login avaiable on the website.
+
 **Website**
-1. MAKE THE SITE STATIC!! Error when reloading a website in slug.
-1. Make the blog content being converted for Nextjs. Like images into the Image component.
 1. Make a Link component that makes all foreign links having target="_blank"
 1. PortableText component. Toi make all the content better styled for html like the Link target.
 

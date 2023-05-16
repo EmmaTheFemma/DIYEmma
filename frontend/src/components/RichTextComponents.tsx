@@ -1,15 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-/* import {useNextSanityImage} from 'next-sanity-image'; */
+import urlFor from "../../sanity/urlFor";
 
 export const RichTextComponents = {
     types: {
         image: ({ value }: any) => {
-            console.log("----- VALUE -----")
-            console.log(value)
-            console.log("-----------------")
-            console.log("The URL: ", `https://cdn.sanity.io/images/01l9ccux/production/${value.asset._ref}`)
-            return (<div className="test-testing"><Image src={`/_next/image?url=${encodeURIComponent(`/_next/image?url=${encodeURIComponent(value.asset._ref)}&w=1920&q=75`)}&w=1920&q=75`} alt={value.alt} fill /><h2>https://cdn.sanity.io/images/01l9ccux/production/{value.asset._ref}</h2></div>);
+            return (<Image src={ urlFor(value.asset._ref).url() } alt={value.alt} width={700} height={400} quality={60} />);
         }
     },
 

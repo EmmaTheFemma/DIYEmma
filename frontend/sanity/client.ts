@@ -1,8 +1,8 @@
-import {createClient} from '@sanity/client'
+import {createClient} from '@sanity/client';
 // Import using ESM URL imports in environments that supports it:
 // import {createClient} from 'https://esm.sh/@sanity/client'
 
-export const client = createClient({
+export const MySanityClient = createClient({
     projectId: "01l9ccux",
     dataset: "production",
     useCdn: true, // set to `false` to bypass the edge cache
