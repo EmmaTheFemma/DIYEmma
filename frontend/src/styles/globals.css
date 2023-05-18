@@ -103,7 +103,7 @@ body {
 }
 
 body {
-  min-height: 100vh; /* Too make a sticky footer. */
+  min-height: 98vh; /* Too make a sticky footer. Should be 100 */
   color: rgb(var(--foreground-rgb));
 }
 

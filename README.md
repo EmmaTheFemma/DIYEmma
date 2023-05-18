@@ -9,25 +9,25 @@ https://www.youtube.com/watch?v=x3fCEPFgUSM&t=2542s
 
 ## TODO
 
-**PRIORITY**
-1. Make /admin login avaiable on the website.
 
 **Website**
-1. Make a Link component that makes all foreign links having target="_blank"
+1. Make a Link component that makes all foreign links (not starting with '/' or '#') having target="_blank"
 1. PortableText component. Toi make all the content better styled for html like the Link target.
+1. Add og metadata for openGraph. Possible [metadataBase](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase)
+1. Add icon in adressbar
+1. Make LOGO + Hamburger + Nav all be in full screen on phone. When active
 
 **Sanity**
 1. Enable Preview, so we can preview blog posts before publishing.
-1. Add authors, maybe make it specific to gmail? Or default to it.
+1. Authors - maybe make it specific to gmail? Or default to it.
 
-
-getStaticProps or getServerSideProps maybe.
 
 ## Getting Started
 
 If the you just downloaded this then **ONLY** run this:
 `npm i install`
 
+**Other commands**
 
 Create NextJS Project: `npx create-next-app@latest`
 
@@ -48,9 +48,6 @@ Get doubled the free from [Sanity Youtube](http://sanity.io/youtube)
 ## More...
 
 [Metadata](https://beta.nextjs.org/docs/api-reference/metadata)
-
-please use the built-in `next/font` instead. The `@next/font` package will be removed in Next.js 14. You can migrate by running `npx @next/codemod@latest built-in-next-font .`. Read more: https://nextjs.org/docs/messages/built-in-next-font
-
 
 
 

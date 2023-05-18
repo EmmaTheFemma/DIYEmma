@@ -45,6 +45,7 @@ export default async function SingleBlog({ params }: Props) {
       <h1>{ blog.name }</h1>
 
       <p>{ moment(blog._createAt).format("MMMM DD, YYYY") } / Not working...</p>
+      {/* <p>{ moment(blog._updatedAt).format("MMMM DD, YYYY") } / Not working...</p> */}
       <p>{ new Date(blog._createAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric"}) } / Please work...</p>
 
       <div className="main-article-banner-container">

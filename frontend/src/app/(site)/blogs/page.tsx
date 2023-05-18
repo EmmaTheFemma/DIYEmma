@@ -17,8 +17,16 @@ export const metadata = {
 
 
 export default async function BlogPage() {
-
     const blogs = await getBlogs();
+
+    const jsonLd = {
+      "@context": "http://schema.org",
+      "@type": "CollectionPage",
+      name: "Blog Articles",
+      description: "Explore a collection of informative and inspiring blog articles.",
+      url: "https://diy-emma.vercel.app/blogs"
+    };
+
 
   return (
     <div className='main-container mt-5'>

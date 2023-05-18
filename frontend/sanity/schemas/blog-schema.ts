@@ -19,28 +19,15 @@ const blog = {
       options: { source: "name" }
     },
     {
-      name: "keywords",
-      title: "Keywords (separated by ,)",
-      type: "string",
+      name: 'topic',
+      title: 'Topic',
+      type: 'reference',
+      to: [{ type: 'topic' }],
     },
     {
       name: "description",
       title: "Description",
       type: "string",
-    },
-    {
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    },
-    {
-      name: 'lastUpdate',
-      title: 'Date updated',
-      type: 'date',
-      options: {
-        dateFormat: 'YYYY-MM-DD',
-        calendarTodayLabel: 'Today'
-      }
     },
     {
       name: "image",
@@ -54,6 +41,12 @@ const blog = {
           type: "string"
         }
       ]
+    },
+    {
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: [{ type: 'author' }],
     },
     {
       name: "content",
