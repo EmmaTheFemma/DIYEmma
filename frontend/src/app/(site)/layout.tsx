@@ -1,22 +1,18 @@
 import '../../styles/globals.css';
 import '../../styles/containers.css';
 import '../../styles/layouts.css';
-import Head from "next/head";
 import TheHeader from './header';
 import MainFooter from './footer';
-import {Josefin_Sans} from '@next/font/google';
+import {Josefin_Sans} from "next/font/google";
 
 
 const josefin = Josefin_Sans({
-  weight:['400'],
-  preload: false //Want to try and make it true.
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  style: ['normal', 'italic'],
+  variable: '--font-josefin'
 });
 
-
-const links = [
-  { name: "Home", url: "/" },
-  { name: "Blog", url: "/blog" },
-];
 
 export default function RootLayout({
   children,
