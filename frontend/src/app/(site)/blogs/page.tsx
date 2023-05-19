@@ -4,6 +4,7 @@ import { getBlogs } from '../../../../sanity/sanity-utils';
 import Link from 'next/link';
 import '../../../styles/components/cards/blog-preview.css';
 import moment from "moment";
+import SiteIntroduction from '@/components/heros/introduction';
 
 
 export const metadata = {
@@ -30,7 +31,8 @@ export default async function BlogPage() {
 
   return (
     <div className='main-container mt-5'>
-      <h1>Emma&apos;s Crafty Blog</h1>
+
+      <SiteIntroduction title="Emma&apos;s Crafty Blog" description="A curated collection of inspiring craft-focused blog posts."/>
 
       <div className='grid-3 gap-2'>
         {blogs.map((blog) => (

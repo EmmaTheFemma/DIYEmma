@@ -1,0 +1,14 @@
+.big-introduction {
+    margin-top: 4em;
+    margin-bottom: 8em;
+}
+
+.big-introduction h1 {
+    font-size: 3rem;
+}
+
+.big-introduction p {
+    margin-top: 1em;
+    font-size: 1.4rem;
+    font-weight: 300;
+}

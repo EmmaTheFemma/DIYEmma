@@ -14,9 +14,6 @@
 }
 
 
-
-
-
 .main_nav.active nav ul {
     left: 0;
     /* right: auto; */
@@ -24,7 +21,6 @@
 /*     justify-content: center;
     align-items: center; */
     background-color: white;
-    background-color: yellow;
 }
 
 
