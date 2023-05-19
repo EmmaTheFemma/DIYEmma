@@ -28,6 +28,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const slug = params.blog;
   const blog = await getBlog(slug);
+  if (!blog) throw new Error("Page not found... damn it")
 
   const metadata = {
     title: blog.name,
