@@ -27,6 +27,7 @@ https://www.youtube.com/watch?v=x3fCEPFgUSM&t=2542s
 **Sanity**
 1. Enable Preview, so we can preview blog posts before publishing.
 1. Authors - maybe make it specific to gmail? Or default to it.
+1. If slug gets changed, add it to redirects.
 
 
 ## Getting Started

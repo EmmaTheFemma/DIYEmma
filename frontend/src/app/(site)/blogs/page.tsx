@@ -48,7 +48,7 @@ export default async function BlogPage() {
                 )}
                 <h2>{blog.name}</h2>
                 <p>{blog.description}</p>
-                <p>Not Working?: {moment(blog._createAt).format("MMMM DD, YYYY")}</p>
+                {/* <p>Not Working?: {moment(blog._createAt).format("MMMM DD, YYYY")}</p> */}
             </Link>
         ))}
         </div>

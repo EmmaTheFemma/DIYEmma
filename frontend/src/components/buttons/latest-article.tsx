@@ -11,7 +11,7 @@ export default /* async */ function LatestArticle() {
 
 
   return (
-    <Link href="/blogs/whjatevr-test"><button>Latest Article...</button></Link>
+    <Link href="/blogs/penisbuddy"><button>Latest Article...</button></Link>
   
   )}
 
