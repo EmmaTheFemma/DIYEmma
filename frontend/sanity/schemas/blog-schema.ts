@@ -5,7 +5,7 @@ const blog = {
   fields: [
     {
       name: "name",
-      title: "Name",
+      title: "Titel",
       type: "string",
 /*       validation: Rule => [
         Rule.required().min(10).error('A title of min. 10 characters is likely good'),
@@ -14,13 +14,13 @@ const blog = {
     },
     {
       name: "slug",
-      title: "Slug",
+      title: "Slug = Te.x min-slug blir i websidan https://diyemma.com/blogs/min-slug",
       type: "slug",
       options: { source: "name" }
     },
     {
       name: 'topic',
-      title: 'Topic',
+      title: 'Topic = För att organisera.',
       type: 'reference',
       to: [{ type: 'topic' }],
     },
@@ -37,7 +37,7 @@ const blog = {
       fields: [
         {
           name: "alt",
-          title: "Alt (Image Text)",
+          title: "Alt (Image Text) VIKTIGT!",
           type: "string"
         }
       ]
@@ -70,7 +70,7 @@ const blog = {
             },
             {
               name: "alt",
-              title: "Alt",
+              title: "Alt (Image Text) Viktigt!",
               type: "string"
             }
           ]

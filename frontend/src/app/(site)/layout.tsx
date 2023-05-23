@@ -3,7 +3,7 @@ import '../../styles/containers.css';
 import '../../styles/layouts.css';
 import TheHeader from './header';
 import MainFooter from './footer';
-import {Josefin_Sans} from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 
 
 const josefin = Josefin_Sans({
@@ -13,6 +13,11 @@ const josefin = Josefin_Sans({
   variable: '--font-josefin'
 });
 
+export const metadata = { 
+  icons: {
+    icon: '/assets/images/icons/heart-icon.ico'
+  }
+}
 
 export default function RootLayout({
   children,

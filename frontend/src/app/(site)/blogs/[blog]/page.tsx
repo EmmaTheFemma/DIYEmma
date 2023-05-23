@@ -45,9 +45,9 @@ export default async function SingleBlog({ params }: Props) {
     <article className='small-container main-article'>
       <h1>{ blog.name }</h1>
 
-      <p>{ moment(blog._createAt).format("MMMM DD, YYYY") } / Not working...</p>
+      {/* <p>{ moment(blog._createAt).format("MMMM DD, YYYY") } / Not working...</p> */}
       {/* <p>{ moment(blog._updatedAt).format("MMMM DD, YYYY") } / Not working...</p> */}
-      <p>{ new Date(blog._createAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric"}) } / Please work...</p>
+      {/* <p>{ new Date(blog._createAt).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric"}) } / Please work...</p> */}
 
       <div className="main-article-banner-container">
         {blog.image && <Image src={blog.image.url} alt={blog.image.alt} priority quality={60} fill/>}

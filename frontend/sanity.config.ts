@@ -8,7 +8,7 @@ const config = defineConfig({
     projectId: "01l9ccux",
     dataset: "production",
     name: 'default',
-    title: 'magenta-kouprey',
+    title: 'Emmas Studio ❤',
     apiVersion: "2023-05-15",
     basePath: "/admin",
     schema: { types: schemas },
