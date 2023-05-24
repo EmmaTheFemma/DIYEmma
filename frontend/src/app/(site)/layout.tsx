@@ -13,11 +13,11 @@ const josefin = Josefin_Sans({
   variable: '--font-josefin'
 });
 
-export const metadata = { 
+/* export const metadata = { 
   icons: {
     icon: '/assets/images/icons/heart-icon.ico'
   }
-}
+} */
 
 export default function RootLayout({
   children,
